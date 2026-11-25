@@ -31,9 +31,11 @@ Line drawings of the American manual alphabet from
 - Changes: none; files renamed by letter.
 - Each file's Commons page is stored as `source` in `data/asl.json`.
 
-## Font: `fonts/`
+## Fonts: `fonts/`
 
-[Caveat](https://github.com/googlefonts/caveat) by The Caveat Project Authors,
-used for the handwritten "Handskrift" title.
-
-- License: [SIL Open Font License 1.1](fonts/OFL.txt)
+- [Caveat](https://github.com/googlefonts/caveat) by The Caveat Project Authors,
+  for the handwritten name and letters.
+  License: [SIL Open Font License 1.1](fonts/OFL-Caveat.txt)
+- [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) by the
+  Braille Institute of America, for all other text.
+  License: [SIL Open Font License 1.1](fonts/OFL-Atkinson.txt)

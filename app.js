@@ -69,43 +69,42 @@ function note(text) {
   return span;
 }
 
+// One slot on the ruled line: picture on top, the letter written underneath.
+// Every slot has a picture area (empty for spaces and punctuation) so the
+// handwritten letters all sit on the same line.
 function card(token, data) {
   const li = document.createElement("li");
-  li.className = `card ${token.kind}`;
+  li.className = `slot ${token.kind}`;
+  const media = document.createElement("div");
+  media.className = "media";
+  const letter = document.createElement("div");
+  letter.className = "letter";
+  li.append(media, letter);
+
   if (token.kind === "gap") {
     li.setAttribute("aria-label", "space");
     return li;
   }
 
-  const media = document.createElement("div");
-  media.className = "media";
-  if (token.kind === "letter") {
-    const entries = data.letters[token.ch] || [];
-    const entry = entries[0];
-    if (entry) {
-      media.classList.add(entry.type); // photo | drawing | video: decides how it's framed
-      media.append(mediaFor(entry, token.ch, data));
-      // Stills can't show movement, so letters that move get a short note.
-      if (entry.motion) {
-        const m = document.createElement("span");
-        m.className = "motion";
-        m.textContent = entry.motion;
-        media.append(m);
-      }
-    } else {
+  letter.textContent = token.ch;
+  if (token.kind === "missing") {
+    media.append(note(`${data.name} has no letter ${token.ch}`));
+  } else if (token.kind === "letter") {
+    const entry = (data.letters[token.ch] || [])[0];
+    if (!entry) {
       media.append(note("Picture coming soon"));
+      return li;
     }
-  } else if (token.kind === "missing") {
-    media.append(note(`No ${data.name} letter`));
-  } else {
-    media.textContent = token.ch;
+    media.classList.add(entry.type); // photo | drawing | video: decides how it's framed
+    media.append(mediaFor(entry, token.ch, data));
+    // Stills can't show movement, so letters that move get a short note.
+    if (entry.motion) {
+      const m = document.createElement("p");
+      m.className = "motion";
+      m.textContent = entry.motion;
+      li.append(m);
+    }
   }
-
-  const letter = document.createElement("div");
-  letter.className = "letter";
-  letter.textContent = token.kind === "plain" ? "" : token.ch;
-
-  li.append(media, letter);
   return li;
 }
 

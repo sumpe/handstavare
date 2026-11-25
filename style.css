@@ -1,25 +1,46 @@
+/* Handskrift: a page from a handwriting exercise book. The hands sit on a
+   ruled practice line, and each letter is written underneath in blue pen.
+   That line is the one bold element; everything else stays quiet. */
+
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/AtkinsonHyperlegible-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
-  --bg: #faf8f5;
-  --fg: #1f1d1a;
-  --muted: #6b665e;
-  --card: #ffffff;
-  --line: #e4dfd6;
-  --accent: #2856c9;
-  --accent-fg: #ffffff;
-  --radius: 14px;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --paper: #fefefc;
+  --text: #18233d;   /* blue-black, like fountain-pen ink on print */
+  --ink: #1f3fae;    /* royal-blue pen */
+  --rule: #c4d3ea;   /* exercise-book ruling */
+  --pencil: #5e6b85; /* secondary text */
+  --tile: #f3f6fb;   /* behind line drawings */
+  --hand: "Caveat", "Segoe Script", "Snell Roundhand", cursive;
+  --print: "Atkinson Hyperlegible", system-ui, sans-serif;
   color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #161514;
-    --fg: #f1eee9;
-    --muted: #a39d93;
-    --card: #22201e;
-    --line: #3a3733;
-    --accent: #7aa2ff;
-    --accent-fg: #10131a;
+    --paper: #10151f;
+    --text: #e6eaf2;
+    --ink: #8faaf5;
+    --rule: #2f3d5a;
+    --pencil: #98a3b9;
+    --tile: #f3f6fb; /* stays light: the drawings are black line art */
   }
 }
 
@@ -30,26 +51,30 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--bg);
-  color: var(--fg);
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--print);
+  font-size: 1.0625rem;
+  line-height: 1.5;
 }
 
-header, main, footer {
+.top, main, footer {
   width: 100%;
-  max-width: 1100px;
+  max-width: 68rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
 }
+main { flex: 1; }
 
-header { padding-top: 2.5rem; }
+/* ---- Header ------------------------------------------------------------ */
 
-/* Handskrift means "handwriting", so the name is written by hand; the plain
-   small-caps descriptor beside it reads as a label, not part of the name. */
-@font-face {
-  font-family: "Caveat";
-  src: url("fonts/Caveat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 400 700;
-  font-display: swap;
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding-top: 2.25rem;
 }
 
 .brand {
@@ -57,192 +82,214 @@ header { padding-top: 2.5rem; }
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  column-gap: 1rem;
-  row-gap: 0.25rem;
-  font-weight: normal;
+  gap: 0 0.9rem;
+  font-weight: 400;
 }
 .wordmark {
-  font-family: "Caveat", "Segoe Script", "Snell Roundhand", cursive;
+  font-family: var(--hand);
   font-weight: 700;
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   line-height: 1;
-  letter-spacing: 0.01em;
+  color: var(--ink);
 }
 .descriptor {
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
-  color: var(--muted);
-  padding-left: 1rem;
-  border-left: 2px solid var(--line);
+  font-size: 1.25rem;
+  color: var(--text);
 }
-
-/* A dictionary entry for the name. */
-.gloss { margin: 0.6rem 0 1.75rem; color: var(--muted); }
-.gloss dfn { font-style: normal; font-weight: 700; color: var(--fg); }
-.gloss .pos { font-style: italic; }
-
-main { flex: 1; }
-
-#controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  align-items: stretch;
-  margin-bottom: 2rem;
-}
-
-#word {
-  flex: 1 1 18rem;
-  font: inherit;
-  font-size: 1.4rem;
-  padding: 0.7rem 1rem;
-  border: 2px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--card);
-  color: var(--fg);
-}
-#word:focus { outline: none; border-color: var(--accent); }
 
 .modes {
   display: flex;
-  border: 2px solid var(--line);
-  border-radius: var(--radius);
+  border: 2px solid var(--text);
+  border-radius: 6px;
   overflow: hidden;
 }
-
 .mode {
   font: inherit;
   font-weight: 700;
   font-size: 1.05rem;
-  padding: 0.5rem 1.1rem;
+  line-height: 1.2;
+  padding: 0.45rem 1rem 0.5rem;
   border: 0;
-  background: var(--card);
-  color: var(--fg);
+  background: transparent;
+  color: var(--text);
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
 }
-.mode + .mode { border-left: 2px solid var(--line); }
-.mode-sub { font-size: 0.7rem; font-weight: 400; opacity: 0.8; }
-/* Active state: filled background AND underline, so it isn't color-only. */
-.mode[aria-checked="true"] {
-  background: var(--accent);
-  color: var(--accent-fg);
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
-}
-.mode:focus-visible { outline: 3px solid var(--accent); outline-offset: -5px; }
+.mode + .mode { border-left: 2px solid var(--text); }
+.mode-sub { font-size: 0.75rem; font-weight: 400; }
+.mode[aria-checked="true"] { background: var(--text); color: var(--paper); }
+.mode:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 
-.cards {
+/* ---- Writing the word -------------------------------------------------- */
+
+.gloss {
+  margin: 0.75rem 0 2.25rem;
+  color: var(--pencil);
+  max-width: 40rem;
+}
+
+#controls { margin-bottom: 2.5rem; }
+
+#word {
+  width: 100%;
+  max-width: 34rem;
+  font: inherit;
+  font-size: 1.75rem;
+  padding: 0.25rem 0.1rem;
+  border: 0;
+  border-bottom: 2px solid var(--text);
+  border-radius: 0;
+  background: transparent;
+  color: var(--text);
+}
+#word::placeholder { color: var(--pencil); opacity: 0.8; }
+#word:focus { outline: none; border-bottom-color: var(--ink); }
+#word:focus-visible { box-shadow: 0 2px 0 var(--ink); }
+
+/* ---- The ruled line ----------------------------------------------------
+   Every letter slot draws its own piece of ruling (top line, dashed
+   midline, baseline) in em units, so the pieces join into one continuous
+   line and scale together on small screens. */
+
+.line {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  row-gap: 2.5rem;
 }
 
-.card {
-  width: 150px;
+.slot {
+  width: 9.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
 }
 
-.card .media {
-  width: 100%;
-  aspect-ratio: 1;
+/* Every picture area has the same explicit height, so all the handwritten
+   letters (and the ruling under spaces and punctuation) sit on one line. */
+.slot .media {
+  position: relative;
+  height: 8.4rem; /* slot width minus side margins: a square */
+  margin: 0 0.55rem 0.6rem;
+  border-radius: 6px;
+  overflow: hidden;
   display: grid;
   place-items: center;
-  background: var(--bg);
-  color: var(--muted);
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 0;
-  overflow: hidden;
 }
-.card .media img,
-.card .media video {
+.slot .media img,
+.slot .media video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   display: block;
 }
-/* Clips are 16:9 with the signer centered: a square crop trims only empty
-   background at the sides, keeping the whole signer, face included. */
-.card .media video { object-fit: cover; }
-
 /* Photos are 4:3 with the signer centered: a square crop trims only background. */
-.card .media.photo img { object-fit: cover; }
+.slot .media.photo img { object-fit: cover; }
 /* Drawings vary in shape (G, H, P are wide): show the whole hand, never crop. */
-.card .media.drawing img {
-  object-fit: contain;
-  padding: 12%;
-  background: #fff;
+.slot .media.drawing { background: var(--tile); }
+.slot .media.drawing img { object-fit: contain; padding: 12%; }
+.slot .media video { object-fit: cover; }
+
+.slot .letter,
+.empty::after {
+  font-family: var(--hand);
+  font-weight: 600;
+  font-size: 4.25rem;
+  line-height: 1;
+  height: 1.05em;
+  padding-left: 0.18em;
+  color: var(--ink);
+  background:
+    linear-gradient(var(--rule), var(--rule)) 0 0.1em / 100% 1px no-repeat,
+    repeating-linear-gradient(90deg, var(--rule) 0 0.1em, transparent 0.1em 0.18em)
+      0 0.47em / 100% 1px no-repeat,
+    linear-gradient(var(--text), var(--text)) 0 0.86em / 100% 2px no-repeat;
 }
 
-/* Movement note for letters that move (stills can't show it). */
-.card .media { position: relative; }
-.card .media .motion {
-  position: absolute;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.72);
-  color: #fff;
-  font-size: 0.72rem;
-  line-height: 1.25;
+/* A space between words: an empty stretch of ruled line. */
+.slot.gap { width: 3.5rem; }
+/* Spaces and punctuation keep an invisible picture area so the line stays level. */
+.slot.gap .media,
+.slot.plain .media { visibility: hidden; }
+
+/* A letter this alphabet doesn't have (Å in ASL): dashed outline, pencil letter. */
+.slot.missing .media {
+  border: 2px dashed var(--pencil);
+  color: var(--pencil);
+  font-size: 0.85rem;
+  line-height: 1.3;
+  text-align: center;
+  padding: 0.75rem;
 }
-.card .media .note { padding: 0.5rem; }
+.slot.missing .letter { color: var(--pencil); }
 
-.card .letter {
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 0.35rem 0 0.5rem;
+/* Digits and punctuation: no handshape, just written on the line. */
+.slot.plain { width: 5rem; }
+.slot.plain .letter { color: var(--text); }
+
+.slot .motion {
+  margin: 0.4rem 0.55rem 0;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  color: var(--pencil);
 }
 
-/* A space in the word: an empty gap card. */
-.card.gap { width: 40px; border: 0; background: none; }
+.slot .note {
+  color: var(--pencil);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0.5rem;
+}
 
-/* Characters with no handshape (digits, punctuation). */
-.card.plain .media { font-size: 2.5rem; color: var(--fg); }
-
-/* Letters missing from this alphabet (e.g. Å in ASL): dashed border as a second cue. */
-.card.missing { border-style: dashed; }
-
-.empty { color: var(--muted); }
-.credit { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
-.credit a { color: inherit; }
+/* Before anything is written: a hint above an empty ruled line. */
+.empty {
+  margin: 0;
+  color: var(--pencil);
+}
+.empty::after {
+  content: "";
+  display: block;
+  margin-top: 1rem;
+}
 .empty[hidden] { display: none; }
 
+/* ---- Footer ------------------------------------------------------------ */
+
 footer {
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
-  color: var(--muted);
-  font-size: 0.85rem;
+  color: var(--pencil);
+  font-size: 0.875rem;
 }
+footer p { margin: 0.25rem 0; max-width: 46rem; }
 footer a { color: inherit; }
+footer a:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
 .visually-hidden {
   position: absolute;
-  width: 1px; height: 1px;
+  width: 1px;
+  height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
 
-@media (max-width: 520px) {
-  .card { width: calc(50% - 0.5rem); }
-  .card.gap { width: 100%; height: 0; }
-  .wordmark { font-size: 3.2rem; }
-  .descriptor { font-size: 0.8rem; }
+/* ---- Small screens: three letters per row, everything scaled down ------ */
+
+@media (max-width: 600px) {
+  .top, main, footer { padding: 0 1rem; }
+  .top { padding-top: 1.5rem; }
+  .wordmark { font-size: 3.4rem; }
+  .descriptor { font-size: 1.05rem; }
+  #word { font-size: 1.4rem; }
+  .slot { width: calc(100% / 3); }
+  .slot.gap { width: 100%; height: 0; overflow: hidden; }
+  .slot.plain { width: calc(100% / 3); }
+  .slot .media { height: auto; aspect-ratio: 1; margin: 0 0.3rem 0.4rem; }
+  .slot .letter, .empty::after { font-size: 3.2rem; }
+  .slot .motion { margin: 0.3rem 0.3rem 0; font-size: 0.78rem; }
 }
