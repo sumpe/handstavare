@@ -30,3 +30,10 @@ Line drawings of the American manual alphabet from
 - License: public domain
 - Changes: none; files renamed by letter.
 - Each file's Commons page is stored as `source` in `data/asl.json`.
+
+## Font: `fonts/`
+
+[Caveat](https://github.com/googlefonts/caveat) by The Caveat Project Authors,
+used for the handwritten "Handskrift" title.
+
+- License: [SIL Open Font License 1.1](fonts/OFL.txt)

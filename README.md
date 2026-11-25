@@ -1,4 +1,4 @@
-# handskrift
+# Handskrift — Fingerspelling Teacher
 
 Type a word and see it fingerspelled, letter by letter, in
 **Swedish Sign Language (STS)** or **American Sign Language (ASL)**.
