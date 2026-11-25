@@ -1,0 +1,20 @@
+# Credits
+
+The code in this repo is MIT licensed (see `LICENSE`). The hand media below are
+**not** covered by the MIT license; each set keeps its own license.
+
+## STS (Swedish Sign Language): `media/sts/lexikon/`
+
+Video clips of the Swedish manual alphabet (*handalfabetet*) from
+[Svenskt teckenspråkslexikon](https://teckensprakslexikon.su.se/kategori/handalfabetet),
+by Avdelningen för teckenspråk, Institutionen för lingvistik, Stockholms universitet.
+
+- License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+  (attribution, non-commercial, share-alike)
+- Changes: none; files renamed by letter (`aa` = Å, `ae` = Ä, `oe` = Ö).
+- Each clip's lexicon entry ID is stored as `id` in `data/sts.json`, e.g.
+  `https://teckensprakslexikon.su.se/ord/09531` for A.
+
+Because of the share-alike and non-commercial terms, anyone reusing these clips
+must credit the lexicon, use them non-commercially, and share any adaptations
+under the same license.

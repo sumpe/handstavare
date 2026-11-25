@@ -1,6 +1,247 @@
 {
   "name": "STS",
   "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ",
-  "signers": {},
-  "letters": {}
+  "signers": {
+    "lexikon": {
+      "name": "Svenskt teckenspråkslexikon",
+      "credit": "Svenskt teckenspråkslexikon, Avdelningen för teckenspråk, Institutionen för lingvistik, Stockholms universitet",
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source": "https://teckensprakslexikon.su.se/kategori/handalfabetet"
+    }
+  },
+  "letters": {
+    "A": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/a.mp4",
+        "type": "video",
+        "id": "09531"
+      }
+    ],
+    "B": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/b.mp4",
+        "type": "video",
+        "id": "09532"
+      }
+    ],
+    "C": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/c.mp4",
+        "type": "video",
+        "id": "09011"
+      }
+    ],
+    "D": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/d.mp4",
+        "type": "video",
+        "id": "09533"
+      }
+    ],
+    "E": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/e.mp4",
+        "type": "video",
+        "id": "11925"
+      }
+    ],
+    "F": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/f.mp4",
+        "type": "video",
+        "id": "11926"
+      }
+    ],
+    "G": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/g.mp4",
+        "type": "video",
+        "id": "11927"
+      }
+    ],
+    "H": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/h.mp4",
+        "type": "video",
+        "id": "11928"
+      }
+    ],
+    "I": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/i.mp4",
+        "type": "video",
+        "id": "11929"
+      }
+    ],
+    "J": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/j.mp4",
+        "type": "video",
+        "id": "11930"
+      }
+    ],
+    "K": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/k.mp4",
+        "type": "video",
+        "id": "11931"
+      }
+    ],
+    "L": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/l.mp4",
+        "type": "video",
+        "id": "11932"
+      }
+    ],
+    "M": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/m.mp4",
+        "type": "video",
+        "id": "11933"
+      }
+    ],
+    "N": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/n.mp4",
+        "type": "video",
+        "id": "11934"
+      }
+    ],
+    "O": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/o.mp4",
+        "type": "video",
+        "id": "11935"
+      }
+    ],
+    "P": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/p.mp4",
+        "type": "video",
+        "id": "11936"
+      }
+    ],
+    "Q": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/q.mp4",
+        "type": "video",
+        "id": "11937"
+      }
+    ],
+    "R": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/r.mp4",
+        "type": "video",
+        "id": "11938"
+      }
+    ],
+    "S": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/s.mp4",
+        "type": "video",
+        "id": "11939"
+      }
+    ],
+    "T": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/t.mp4",
+        "type": "video",
+        "id": "11940"
+      }
+    ],
+    "U": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/u.mp4",
+        "type": "video",
+        "id": "11941"
+      }
+    ],
+    "V": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/v.mp4",
+        "type": "video",
+        "id": "11942"
+      }
+    ],
+    "W": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/w.mp4",
+        "type": "video",
+        "id": "11943"
+      }
+    ],
+    "X": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/x.mp4",
+        "type": "video",
+        "id": "11944"
+      }
+    ],
+    "Y": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/y.mp4",
+        "type": "video",
+        "id": "11945"
+      }
+    ],
+    "Z": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/z.mp4",
+        "type": "video",
+        "id": "11946"
+      }
+    ],
+    "Å": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/aa.mp4",
+        "type": "video",
+        "id": "11947"
+      }
+    ],
+    "Ä": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/ae.mp4",
+        "type": "video",
+        "id": "11948"
+      }
+    ],
+    "Ö": [
+      {
+        "signer": "lexikon",
+        "file": "media/sts/lexikon/oe.mp4",
+        "type": "video",
+        "id": "08947"
+      }
+    ]
+  }
 }
