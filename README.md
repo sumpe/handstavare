@@ -11,7 +11,9 @@ Type a word and see it fingerspelled, letter by letter, in
 
 - **STS and ASL modes.** STS uses the 29-letter Swedish manual alphabet (A–Ö),
   ASL the 26-letter American one. In ASL mode, Å/Ä/Ö show a "no ASL letter" card.
-- **Clips and pictures.** STS letters are short video clips; ASL letters are drawings.
+- **Still pictures.** STS letters are photos of a signer; ASL letters are drawings.
+  Letters that move (STS Y, Å, Ä, Ö; ASL J, Z) carry a short movement note.
+- **Plays in sequence.** Letters light up one after another, then the word repeats.
 - **Shareable links.** The address keeps the mode and word, e.g. `#sts/katt` or `#asl/cat`.
 
 ## Adding a new set of hands
@@ -21,8 +23,9 @@ The goal is to show hands of many different people. Each letter in
 so a new set is data only, no code changes:
 
 1. Put the files in `media/<language>/<signer-id>/` (e.g. `media/asl/alex/a.jpg`).
+   Add `"motion": "…"` to a letter that moves.
 2. Add the signer under `"signers"` with `name`, `credit`, `license` and `source`.
-3. Add `{ "signer": "<signer-id>", "file": "…", "type": "image" | "video" }`
+3. Add `{ "signer": "<signer-id>", "file": "…", "type": "photo" | "drawing" | "video" }`
    to each letter's list.
 4. Credit the set in `CREDITS.md`. Only use media you have the right to share.
 

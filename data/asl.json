@@ -14,7 +14,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/a.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_A.svg"
       }
     ],
@@ -22,7 +22,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/b.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_B.svg"
       }
     ],
@@ -30,7 +30,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/c.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_C.svg"
       }
     ],
@@ -38,7 +38,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/d.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_D.svg"
       }
     ],
@@ -46,7 +46,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/e.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_E.svg"
       }
     ],
@@ -54,7 +54,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/f.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_F.svg"
       }
     ],
@@ -62,7 +62,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/g.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_G.svg"
       }
     ],
@@ -70,7 +70,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/h.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_H.svg"
       }
     ],
@@ -78,7 +78,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/i.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_I.svg"
       }
     ],
@@ -86,15 +86,16 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/j.svg",
-        "type": "image",
-        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_J.svg"
+        "type": "drawing",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_J.svg",
+        "motion": "traces a J in the air (see arrow)"
       }
     ],
     "K": [
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/k.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_K.svg"
       }
     ],
@@ -102,7 +103,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/l.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_L.svg"
       }
     ],
@@ -110,7 +111,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/m.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_M.svg"
       }
     ],
@@ -118,7 +119,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/n.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_N.svg"
       }
     ],
@@ -126,7 +127,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/o.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_O.svg"
       }
     ],
@@ -134,7 +135,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/p.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_P.svg"
       }
     ],
@@ -142,7 +143,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/q.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_Q.svg"
       }
     ],
@@ -150,7 +151,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/r.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_R.svg"
       }
     ],
@@ -158,7 +159,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/s.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_S.svg"
       }
     ],
@@ -166,7 +167,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/t.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_T.svg"
       }
     ],
@@ -174,7 +175,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/u.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_U.svg"
       }
     ],
@@ -182,7 +183,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/v.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_V.svg"
       }
     ],
@@ -190,7 +191,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/w.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_W.svg"
       }
     ],
@@ -198,7 +199,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/x.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_X.svg"
       }
     ],
@@ -206,7 +207,7 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/y.svg",
-        "type": "image",
+        "type": "drawing",
         "source": "https://commons.wikimedia.org/wiki/File:Sign_language_Y.svg"
       }
     ],
@@ -214,8 +215,9 @@
       {
         "signer": "wpclipart",
         "file": "media/asl/wpclipart/z.svg",
-        "type": "image",
-        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_Z.svg"
+        "type": "drawing",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_Z.svg",
+        "motion": "traces a Z in the air (see arrow)"
       }
     ]
   }

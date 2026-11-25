@@ -14,233 +14,266 @@
     "A": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/a.mp4",
-        "type": "video",
-        "id": "09531"
+        "file": "media/sts/lexikon/a.jpg",
+        "type": "photo",
+        "id": "09531",
+        "clip": "media/sts/lexikon/a.mp4"
       }
     ],
     "B": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/b.mp4",
-        "type": "video",
-        "id": "09532"
+        "file": "media/sts/lexikon/b.jpg",
+        "type": "photo",
+        "id": "09532",
+        "clip": "media/sts/lexikon/b.mp4"
       }
     ],
     "C": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/c.mp4",
-        "type": "video",
-        "id": "09011"
+        "file": "media/sts/lexikon/c.jpg",
+        "type": "photo",
+        "id": "09011",
+        "clip": "media/sts/lexikon/c.mp4"
       }
     ],
     "D": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/d.mp4",
-        "type": "video",
-        "id": "09533"
+        "file": "media/sts/lexikon/d.jpg",
+        "type": "photo",
+        "id": "09533",
+        "clip": "media/sts/lexikon/d.mp4"
       }
     ],
     "E": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/e.mp4",
-        "type": "video",
-        "id": "11925"
+        "file": "media/sts/lexikon/e.jpg",
+        "type": "photo",
+        "id": "11925",
+        "clip": "media/sts/lexikon/e.mp4"
       }
     ],
     "F": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/f.mp4",
-        "type": "video",
-        "id": "11926"
+        "file": "media/sts/lexikon/f.jpg",
+        "type": "photo",
+        "id": "11926",
+        "clip": "media/sts/lexikon/f.mp4"
       }
     ],
     "G": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/g.mp4",
-        "type": "video",
-        "id": "11927"
+        "file": "media/sts/lexikon/g.jpg",
+        "type": "photo",
+        "id": "11927",
+        "clip": "media/sts/lexikon/g.mp4"
       }
     ],
     "H": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/h.mp4",
-        "type": "video",
-        "id": "11928"
+        "file": "media/sts/lexikon/h.jpg",
+        "type": "photo",
+        "id": "11928",
+        "clip": "media/sts/lexikon/h.mp4"
       }
     ],
     "I": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/i.mp4",
-        "type": "video",
-        "id": "11929"
+        "file": "media/sts/lexikon/i.jpg",
+        "type": "photo",
+        "id": "11929",
+        "clip": "media/sts/lexikon/i.mp4"
       }
     ],
     "J": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/j.mp4",
-        "type": "video",
-        "id": "11930"
+        "file": "media/sts/lexikon/j.jpg",
+        "type": "photo",
+        "id": "11930",
+        "clip": "media/sts/lexikon/j.mp4"
       }
     ],
     "K": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/k.mp4",
-        "type": "video",
-        "id": "11931"
+        "file": "media/sts/lexikon/k.jpg",
+        "type": "photo",
+        "id": "11931",
+        "clip": "media/sts/lexikon/k.mp4"
       }
     ],
     "L": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/l.mp4",
-        "type": "video",
-        "id": "11932"
+        "file": "media/sts/lexikon/l.jpg",
+        "type": "photo",
+        "id": "11932",
+        "clip": "media/sts/lexikon/l.mp4"
       }
     ],
     "M": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/m.mp4",
-        "type": "video",
-        "id": "11933"
+        "file": "media/sts/lexikon/m.jpg",
+        "type": "photo",
+        "id": "11933",
+        "clip": "media/sts/lexikon/m.mp4"
       }
     ],
     "N": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/n.mp4",
-        "type": "video",
-        "id": "11934"
+        "file": "media/sts/lexikon/n.jpg",
+        "type": "photo",
+        "id": "11934",
+        "clip": "media/sts/lexikon/n.mp4"
       }
     ],
     "O": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/o.mp4",
-        "type": "video",
-        "id": "11935"
+        "file": "media/sts/lexikon/o.jpg",
+        "type": "photo",
+        "id": "11935",
+        "clip": "media/sts/lexikon/o.mp4"
       }
     ],
     "P": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/p.mp4",
-        "type": "video",
-        "id": "11936"
+        "file": "media/sts/lexikon/p.jpg",
+        "type": "photo",
+        "id": "11936",
+        "clip": "media/sts/lexikon/p.mp4"
       }
     ],
     "Q": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/q.mp4",
-        "type": "video",
-        "id": "11937"
+        "file": "media/sts/lexikon/q.jpg",
+        "type": "photo",
+        "id": "11937",
+        "clip": "media/sts/lexikon/q.mp4"
       }
     ],
     "R": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/r.mp4",
-        "type": "video",
-        "id": "11938"
+        "file": "media/sts/lexikon/r.jpg",
+        "type": "photo",
+        "id": "11938",
+        "clip": "media/sts/lexikon/r.mp4"
       }
     ],
     "S": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/s.mp4",
-        "type": "video",
-        "id": "11939"
+        "file": "media/sts/lexikon/s.jpg",
+        "type": "photo",
+        "id": "11939",
+        "clip": "media/sts/lexikon/s.mp4"
       }
     ],
     "T": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/t.mp4",
-        "type": "video",
-        "id": "11940"
+        "file": "media/sts/lexikon/t.jpg",
+        "type": "photo",
+        "id": "11940",
+        "clip": "media/sts/lexikon/t.mp4"
       }
     ],
     "U": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/u.mp4",
-        "type": "video",
-        "id": "11941"
+        "file": "media/sts/lexikon/u.jpg",
+        "type": "photo",
+        "id": "11941",
+        "clip": "media/sts/lexikon/u.mp4"
       }
     ],
     "V": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/v.mp4",
-        "type": "video",
-        "id": "11942"
+        "file": "media/sts/lexikon/v.jpg",
+        "type": "photo",
+        "id": "11942",
+        "clip": "media/sts/lexikon/v.mp4"
       }
     ],
     "W": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/w.mp4",
-        "type": "video",
-        "id": "11943"
+        "file": "media/sts/lexikon/w.jpg",
+        "type": "photo",
+        "id": "11943",
+        "clip": "media/sts/lexikon/w.mp4"
       }
     ],
     "X": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/x.mp4",
-        "type": "video",
-        "id": "11944"
+        "file": "media/sts/lexikon/x.jpg",
+        "type": "photo",
+        "id": "11944",
+        "clip": "media/sts/lexikon/x.mp4"
       }
     ],
     "Y": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/y.mp4",
-        "type": "video",
-        "id": "11945"
+        "file": "media/sts/lexikon/y.jpg",
+        "type": "photo",
+        "id": "11945",
+        "clip": "media/sts/lexikon/y.mp4",
+        "motion": "↓ short move down"
       }
     ],
     "Z": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/z.mp4",
-        "type": "video",
-        "id": "11946"
+        "file": "media/sts/lexikon/z.jpg",
+        "type": "photo",
+        "id": "11946",
+        "clip": "media/sts/lexikon/z.mp4"
       }
     ],
     "Å": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/aa.mp4",
-        "type": "video",
-        "id": "11947"
+        "file": "media/sts/lexikon/aa.jpg",
+        "type": "photo",
+        "id": "11947",
+        "clip": "media/sts/lexikon/aa.mp4",
+        "motion": "↓ small circles, moving down"
       }
     ],
     "Ä": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/ae.mp4",
-        "type": "video",
-        "id": "11948"
+        "file": "media/sts/lexikon/ae.jpg",
+        "type": "photo",
+        "id": "11948",
+        "clip": "media/sts/lexikon/ae.mp4",
+        "motion": "moves to the signer's right"
       }
     ],
     "Ö": [
       {
         "signer": "lexikon",
-        "file": "media/sts/lexikon/oe.mp4",
-        "type": "video",
-        "id": "08947"
+        "file": "media/sts/lexikon/oe.jpg",
+        "type": "photo",
+        "id": "08947",
+        "clip": "media/sts/lexikon/oe.mp4",
+        "motion": "↑ moves up"
       }
     ]
   }

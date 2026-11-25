@@ -172,11 +172,28 @@ main { flex: 1; }
   .card { transition: none; }
   .card.active { transform: none; }
 }
+/* Photos are 4:3 with the signer centered: a square crop trims only background. */
+.card .media.photo img { object-fit: cover; }
 /* Drawings vary in shape (G, H, P are wide): show the whole hand, never crop. */
-.card .media img {
+.card .media.drawing img {
   object-fit: contain;
   padding: 12%;
   background: #fff;
+}
+
+/* Movement note for letters that move (stills can't show it). */
+.card .media { position: relative; }
+.card .media .motion {
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1.25;
 }
 .card .media .note { padding: 0.5rem; }
 
