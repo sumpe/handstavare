@@ -18,3 +18,14 @@ by Avdelningen för teckenspråk, Institutionen för lingvistik, Stockholms univ
 Because of the share-alike and non-commercial terms, anyone reusing these clips
 must credit the lexicon, use them non-commercially, and share any adaptations
 under the same license.
+
+## ASL (American Sign Language): `media/asl/wpclipart/`
+
+Line drawings of the American manual alphabet from
+[wpclipart.com](https://www.wpclipart.com/), via
+[Wikimedia Commons, Category:ASL letters](https://commons.wikimedia.org/wiki/Category:ASL_letters)
+(files `Sign language A.svg` … `Sign language Z.svg`).
+
+- License: public domain
+- Changes: none; files renamed by letter.
+- Each file's Commons page is stored as `source` in `data/asl.json`.

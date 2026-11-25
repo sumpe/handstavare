@@ -1,6 +1,222 @@
 {
   "name": "ASL",
   "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  "signers": {},
-  "letters": {}
+  "signers": {
+    "wpclipart": {
+      "name": "wpclipart.com drawings (Wikimedia Commons)",
+      "credit": "wpclipart.com, via Wikimedia Commons",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/Category:ASL_letters"
+    }
+  },
+  "letters": {
+    "A": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/a.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_A.svg"
+      }
+    ],
+    "B": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/b.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_B.svg"
+      }
+    ],
+    "C": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/c.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_C.svg"
+      }
+    ],
+    "D": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/d.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_D.svg"
+      }
+    ],
+    "E": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/e.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_E.svg"
+      }
+    ],
+    "F": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/f.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_F.svg"
+      }
+    ],
+    "G": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/g.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_G.svg"
+      }
+    ],
+    "H": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/h.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_H.svg"
+      }
+    ],
+    "I": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/i.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_I.svg"
+      }
+    ],
+    "J": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/j.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_J.svg"
+      }
+    ],
+    "K": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/k.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_K.svg"
+      }
+    ],
+    "L": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/l.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_L.svg"
+      }
+    ],
+    "M": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/m.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_M.svg"
+      }
+    ],
+    "N": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/n.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_N.svg"
+      }
+    ],
+    "O": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/o.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_O.svg"
+      }
+    ],
+    "P": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/p.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_P.svg"
+      }
+    ],
+    "Q": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/q.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_Q.svg"
+      }
+    ],
+    "R": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/r.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_R.svg"
+      }
+    ],
+    "S": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/s.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_S.svg"
+      }
+    ],
+    "T": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/t.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_T.svg"
+      }
+    ],
+    "U": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/u.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_U.svg"
+      }
+    ],
+    "V": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/v.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_V.svg"
+      }
+    ],
+    "W": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/w.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_W.svg"
+      }
+    ],
+    "X": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/x.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_X.svg"
+      }
+    ],
+    "Y": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/y.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_Y.svg"
+      }
+    ],
+    "Z": [
+      {
+        "signer": "wpclipart",
+        "file": "media/asl/wpclipart/z.svg",
+        "type": "image",
+        "source": "https://commons.wikimedia.org/wiki/File:Sign_language_Z.svg"
+      }
+    ]
+  }
 }
