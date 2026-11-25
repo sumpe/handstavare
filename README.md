@@ -13,7 +13,6 @@ Type a word and see it fingerspelled, letter by letter, in
   ASL the 26-letter American one. In ASL mode, Å/Ä/Ö show a "no ASL letter" card.
 - **Still pictures.** STS letters are photos of a signer; ASL letters are drawings.
   Letters that move (STS Y, Å, Ä, Ö; ASL J, Z) carry a short movement note.
-- **Plays in sequence.** Letters light up one after another, then the word repeats.
 - **Shareable links.** The address keeps the mode and word, e.g. `#sts/katt` or `#asl/cat`.
 
 ## Adding a new set of hands
