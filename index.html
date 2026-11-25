@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>handskrift — fingerspelling in STS and ASL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>handskrift</h1>
+    <p class="tagline">Type a word and see it fingerspelled.</p>
+  </header>
+
+  <main>
+    <form id="controls" autocomplete="off">
+      <label for="word" class="visually-hidden">Word</label>
+      <input id="word" name="word" type="text" placeholder="Type a word, e.g. katt"
+             maxlength="40" spellcheck="false" autocapitalize="characters">
+
+      <div class="modes" role="radiogroup" aria-label="Sign language">
+        <button type="button" class="mode" data-mode="sts" role="radio" aria-checked="true">
+          STS <span class="mode-sub">Svenskt teckenspråk</span>
+        </button>
+        <button type="button" class="mode" data-mode="asl" role="radio" aria-checked="false">
+          ASL <span class="mode-sub">American Sign Language</span>
+        </button>
+      </div>
+    </form>
+
+    <ol id="output" class="cards" aria-live="polite"></ol>
+    <p id="empty" class="empty">Your word will appear here, one hand per letter.</p>
+  </main>
+
+  <footer>
+    <p>Hand images and clips are credited in
+      <a href="https://github.com/sumpe/handskrift/blob/main/CREDITS.md">CREDITS.md</a>.
+      Code on <a href="https://github.com/sumpe/handskrift">GitHub</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

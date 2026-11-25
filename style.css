@@ -1,0 +1,180 @@
+:root {
+  --bg: #faf8f5;
+  --fg: #1f1d1a;
+  --muted: #6b665e;
+  --card: #ffffff;
+  --line: #e4dfd6;
+  --accent: #2856c9;
+  --accent-fg: #ffffff;
+  --radius: 14px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161514;
+    --fg: #f1eee9;
+    --muted: #a39d93;
+    --card: #22201e;
+    --line: #3a3733;
+    --accent: #7aa2ff;
+    --accent-fg: #10131a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+header, main, footer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+header { padding-top: 2.5rem; }
+h1 { margin: 0; font-size: 2.4rem; letter-spacing: -0.02em; }
+.tagline { margin: 0.25rem 0 1.5rem; color: var(--muted); }
+
+main { flex: 1; }
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+
+#word {
+  flex: 1 1 18rem;
+  font: inherit;
+  font-size: 1.4rem;
+  padding: 0.7rem 1rem;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--fg);
+}
+#word:focus { outline: none; border-color: var(--accent); }
+
+.modes {
+  display: flex;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.mode {
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.5rem 1.1rem;
+  border: 0;
+  background: var(--card);
+  color: var(--fg);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mode + .mode { border-left: 2px solid var(--line); }
+.mode-sub { font-size: 0.7rem; font-weight: 400; opacity: 0.8; }
+/* Active state: filled background AND underline, so it isn't color-only. */
+.mode[aria-checked="true"] {
+  background: var(--accent);
+  color: var(--accent-fg);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.mode:focus-visible { outline: 3px solid var(--accent); outline-offset: -5px; }
+
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.card .media {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0;
+}
+.card .media img,
+.card .media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card .media .note { padding: 0.5rem; }
+
+.card .letter {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.35rem 0 0.5rem;
+}
+
+/* A space in the word: an empty gap card. */
+.card.gap { width: 40px; border: 0; background: none; }
+
+/* Characters with no handshape (digits, punctuation). */
+.card.plain .media { font-size: 2.5rem; color: var(--fg); }
+
+/* Letters missing from this alphabet (e.g. Å in ASL): dashed border as a second cue. */
+.card.missing { border-style: dashed; }
+
+.empty { color: var(--muted); }
+.empty[hidden] { display: none; }
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+footer a { color: inherit; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .card { width: calc(50% - 0.5rem); }
+  .card.gap { width: 100%; height: 0; }
+  h1 { font-size: 2rem; }
+}
