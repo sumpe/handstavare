@@ -3,6 +3,8 @@
 Type a word and see it fingerspelled, letter by letter, in
 **Swedish Sign Language (STS)** or **American Sign Language (ASL)**.
 
+**Live site: https://sumpe.github.io/handskrift/**
+
 *Handskrift* is Swedish for "handwriting", here meaning writing with your hands.
 
 ## Features
