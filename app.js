@@ -96,11 +96,25 @@ function card(token, data) {
   return li;
 }
 
+// Attribution for every signer set in this language (required by CC licenses).
+function renderCredit(data) {
+  const el = document.getElementById("credit");
+  el.replaceChildren();
+  for (const s of Object.values(data.signers)) {
+    if (el.childNodes.length) el.append(" · ");
+    const a = document.createElement("a");
+    a.href = s.source;
+    a.textContent = s.credit;
+    el.append(`${data.name} hands: `, a, `, ${s.license}`);
+  }
+}
+
 async function render() {
   const data = await loadData(mode);
   const tokens = tokenize(input.value, data);
   output.replaceChildren(...tokens.map((t) => card(t, data)));
   empty.hidden = tokens.length > 0;
+  renderCredit(data);
   saveHash();
 }
 

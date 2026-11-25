@@ -168,6 +168,8 @@ main { flex: 1; }
 .card.missing { border-style: dashed; }
 
 .empty { color: var(--muted); }
+.credit { color: var(--muted); font-size: 0.85rem; margin-top: 1.5rem; }
+.credit a { color: inherit; }
 .empty[hidden] { display: none; }
 
 footer {
